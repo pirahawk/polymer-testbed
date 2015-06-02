@@ -144,6 +144,7 @@
     <Content Include="Content\bower_components\webcomponentsjs\build.log" />
     <Content Include="Content\bower_components\webcomponentsjs\package.json" />
     <Content Include="Content\bower_components\webcomponentsjs\README.md" />
+    <Content Include="Views\Home\TestComponent.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

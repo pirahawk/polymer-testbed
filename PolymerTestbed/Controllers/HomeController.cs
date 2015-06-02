@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace PolymerTestbed.Controllers
 {
@@ -10,12 +6,16 @@ namespace PolymerTestbed.Controllers
     {
         // GET: Home
         [Route("")]
-        [Route("home/index")]
+        [Route("~/home/index")]
         public ViewResult Index()
         {
             return View();
         }
 
-        
+        [Route("~/home/test")]
+        public ViewResult TestComponent()
+        {
+            return View();
+        }
     }
 }
