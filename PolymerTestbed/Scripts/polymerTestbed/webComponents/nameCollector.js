@@ -12,13 +12,13 @@
 
                 firstName: {
                     type: String,
-                    observer: 'printName',
+                    observer: 'nameChanged',
                     reflectToAttribute: true,
                 },
 
                 lastName: {
                     type: String,
-                    observer: 'printName',
+                    observer: 'nameChanged',
                     reflectToAttribute: true
                 },
 
@@ -32,8 +32,9 @@
                 return fName + ' ' + lName;
             },
 
-            printName: function (newValue, oldValue) {
+            nameChanged: function (newValue, oldValue) {
                 console.log('Name: ' + this.fullName);
+                this.$.fullName.textContent = this.fullName;
             },
 
         });
