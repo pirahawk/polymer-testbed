@@ -130,6 +130,7 @@
     <Content Include="Content\bower_components\webcomponentsjs\package.json" />
     <Content Include="Content\bower_components\webcomponentsjs\README.md" />
     <None Include="T4MVC.tt.settings.xml" />
+    <Content Include="Scripts\polymerTestbed\webComponents\nameCollector.js" />
     <Content Include="Scripts\polymerTestbed\webComponents\protoElement.js" />
     <Content Include="Scripts\polymerTestbed\_main.js" />
     <Content Include="Web.config" />
@@ -171,7 +172,8 @@
       <LastGenOutput>T4MVC.cs</LastGenOutput>
     </None>
     <Content Include="Views\WebComponents\All.cshtml" />
-    <Content Include="Views\WebComponents\ProtoElement.cshtml" />
+    <Content Include="Views\WebComponents\_ProtoElement.cshtml" />
+    <Content Include="Views\WebComponents\_NameCollector.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

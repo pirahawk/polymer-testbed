@@ -95,6 +95,7 @@ namespace Links
                 private const string URLPATH = "~/Scripts/polymerTestbed/webComponents";
                 public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
                 public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+                public static readonly string nameCollector_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/nameCollector.min.js") ? Url("nameCollector.min.js") : Url("nameCollector.js");
                 public static readonly string protoElement_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/protoElement.min.js") ? Url("protoElement.min.js") : Url("protoElement.js");
             }
         
@@ -164,6 +165,7 @@ namespace Links
                 {
                     public static class Assets
                     {
+                        public const string nameCollector_js = "~/Scripts/polymerTestbed/webComponents/nameCollector.js"; 
                         public const string protoElement_js = "~/Scripts/polymerTestbed/webComponents/protoElement.js"; 
                     }
                 }

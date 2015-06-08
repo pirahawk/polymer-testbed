@@ -95,11 +95,13 @@ namespace PolymerTestbed.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
+                public readonly string _NameCollector = "_NameCollector";
+                public readonly string _ProtoElement = "_ProtoElement";
                 public readonly string All = "All";
-                public readonly string ProtoElement = "ProtoElement";
             }
+            public readonly string _NameCollector = "~/Views/WebComponents/_NameCollector.cshtml";
+            public readonly string _ProtoElement = "~/Views/WebComponents/_ProtoElement.cshtml";
             public readonly string All = "~/Views/WebComponents/All.cshtml";
-            public readonly string ProtoElement = "~/Views/WebComponents/ProtoElement.cshtml";
         }
     }
 
