@@ -10,7 +10,7 @@ namespace PolymerTestbed.Controllers
     public partial class WebComponentsController : Controller
     {
         [Route("")]
-        public virtual ActionResult Index()
+        public virtual ActionResult All()
         {
             return View();
         }

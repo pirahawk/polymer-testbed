@@ -75,13 +75,13 @@ namespace PolymerTestbed.Controllers
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNamesClass
         {
-            public readonly string Index = "Index";
+            public readonly string All = "All";
         }
 
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public class ActionNameConstants
         {
-            public const string Index = "Index";
+            public const string All = "All";
         }
 
 
@@ -95,13 +95,11 @@ namespace PolymerTestbed.Controllers
             public _ViewNamesClass ViewNames { get { return s_ViewNames; } }
             public class _ViewNamesClass
             {
-                public readonly string _ViewStart = "_ViewStart";
-                public readonly string _WebComponentsLayout = "_WebComponentsLayout";
-                public readonly string Index = "Index";
+                public readonly string All = "All";
+                public readonly string ProtoElement = "ProtoElement";
             }
-            public readonly string _ViewStart = "~/Views/WebComponents/_ViewStart.cshtml";
-            public readonly string _WebComponentsLayout = "~/Views/WebComponents/_WebComponentsLayout.cshtml";
-            public readonly string Index = "~/Views/WebComponents/Index.cshtml";
+            public readonly string All = "~/Views/WebComponents/All.cshtml";
+            public readonly string ProtoElement = "~/Views/WebComponents/ProtoElement.cshtml";
         }
     }
 
@@ -111,13 +109,13 @@ namespace PolymerTestbed.Controllers
         public T4MVC_WebComponentsController() : base(Dummy.Instance) { }
 
         [NonAction]
-        partial void IndexOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
+        partial void AllOverride(T4MVC_System_Web_Mvc_ActionResult callInfo);
 
         [NonAction]
-        public override System.Web.Mvc.ActionResult Index()
+        public override System.Web.Mvc.ActionResult All()
         {
-            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.Index);
-            IndexOverride(callInfo);
+            var callInfo = new T4MVC_System_Web_Mvc_ActionResult(Area, Name, ActionNames.All);
+            AllOverride(callInfo);
             return callInfo;
         }
 
