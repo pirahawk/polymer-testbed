@@ -2,18 +2,12 @@
 
 namespace PolymerTestbed.Controllers
 {
-    public class HomeController : Controller
+    public partial class HomeController : Controller
     {
         // GET: Home
         [Route("")]
         [Route("~/home/index")]
-        public ViewResult Index()
-        {
-            return View();
-        }
-
-        [Route("~/home/test")]
-        public ViewResult TestComponent()
+        public virtual ViewResult Index()
         {
             return View();
         }
