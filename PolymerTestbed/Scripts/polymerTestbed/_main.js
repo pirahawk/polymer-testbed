@@ -1,3 +1,5 @@
-﻿if (typeof polymerTestBed === 'undefined') {
-    polymerTestBed = {};
+﻿if (typeof PolymerTestBed === 'undefined') {
+    PolymerTestBed = {};
 }
+
+

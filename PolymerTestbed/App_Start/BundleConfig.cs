@@ -7,8 +7,11 @@ namespace PolymerTestbed
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new ScriptBundle("~/utility")
+                .Include("~/Scripts/jquery/jquery-2.1.4.min.js")
+                .Include("~/Scripts/lodash/lodash.min.js"));
+
             bundles.Add(new ScriptBundle("~/polymer")
-                //.IncludeDirectory("~/Content/bower_components/webcomponentsjs", "*.js", true)
                 .Include("~/Content/bower_components/webcomponentsjs/webcomponents.min.js"));
 
             bundles.Add(new ScriptBundle("~/polymerTestbed/webComponents")

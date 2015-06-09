@@ -130,8 +130,9 @@
     <Content Include="Content\bower_components\webcomponentsjs\package.json" />
     <Content Include="Content\bower_components\webcomponentsjs\README.md" />
     <None Include="T4MVC.tt.settings.xml" />
-    <Content Include="Scripts\polymerTestbed\webComponents\nameCollector.js" />
-    <Content Include="Scripts\polymerTestbed\webComponents\protoElement.js" />
+    <Content Include="Scripts\jquery\jquery-2.1.4.min.js" />
+    <Content Include="Scripts\lodash\lodash.min.js" />
+    <Content Include="Scripts\polymerTestbed\webComponents\registration.js" />
     <Content Include="Scripts\polymerTestbed\_main.js" />
     <Content Include="Web.config" />
   </ItemGroup>

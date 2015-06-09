@@ -6,5 +6,11 @@
 
 
 <script>
-        polymerTestBed.components.ProtoElement();
+    PolymerTestBed.registerWebComponent(
+        {
+            is: "proto-element",
+            ready: function () {
+                console.log('function called');
+            }
+        });
 </script>

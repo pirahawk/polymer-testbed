@@ -85,6 +85,22 @@ namespace Links
         public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
         public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
         [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class jquery {
+            private const string URLPATH = "~/Scripts/jquery";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string jquery_2_1_4_min_js = Url("jquery-2.1.4.min.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
+        public static class lodash {
+            private const string URLPATH = "~/Scripts/lodash";
+            public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
+            public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
+            public static readonly string lodash_min_js = Url("lodash.min.js");
+        }
+    
+        [GeneratedCode("T4MVC", "2.0"), DebuggerNonUserCode]
         public static class polymerTestbed {
             private const string URLPATH = "~/Scripts/polymerTestbed";
             public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
@@ -95,8 +111,7 @@ namespace Links
                 private const string URLPATH = "~/Scripts/polymerTestbed/webComponents";
                 public static string Url() { return T4MVCHelpers.ProcessVirtualPath(URLPATH); }
                 public static string Url(string fileName) { return T4MVCHelpers.ProcessVirtualPath(URLPATH + "/" + fileName); }
-                public static readonly string nameCollector_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/nameCollector.min.js") ? Url("nameCollector.min.js") : Url("nameCollector.js");
-                public static readonly string protoElement_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/protoElement.min.js") ? Url("protoElement.min.js") : Url("protoElement.js");
+                public static readonly string registration_js = T4MVCHelpers.IsProduction() && T4Extensions.FileExists(URLPATH + "/registration.min.js") ? Url("registration.min.js") : Url("registration.js");
             }
         
         }
@@ -159,14 +174,27 @@ namespace Links
     {
         public static partial class Scripts 
         {
+            public static partial class jquery 
+            {
+                public static class Assets
+                {
+                    public const string jquery_2_1_4_min_js = "~/Scripts/jquery/jquery-2.1.4.min.js"; 
+                }
+            }
+            public static partial class lodash 
+            {
+                public static class Assets
+                {
+                    public const string lodash_min_js = "~/Scripts/lodash/lodash.min.js"; 
+                }
+            }
             public static partial class polymerTestbed 
             {
                 public static partial class webComponents 
                 {
                     public static class Assets
                     {
-                        public const string nameCollector_js = "~/Scripts/polymerTestbed/webComponents/nameCollector.js"; 
-                        public const string protoElement_js = "~/Scripts/polymerTestbed/webComponents/protoElement.js"; 
+                        public const string registration_js = "~/Scripts/polymerTestbed/webComponents/registration.js"; 
                     }
                 }
                 public static class Assets
