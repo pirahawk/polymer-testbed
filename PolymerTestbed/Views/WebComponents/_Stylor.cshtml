@@ -1,0 +1,21 @@
+﻿<dom-module id="proto-stylor">
+    <template>
+        <div class="topper">
+            <div class="first-thingy">
+                <content select=".child-thingy"></content>
+            </div>
+            <content select=".other-thingy"></content>
+            @*<content select=".other-things"></content>*@
+
+        </div>
+        
+    </template>
+</dom-module>
+
+
+
+<script>
+    PolymerTestBed.registerWebComponent({
+        is: 'proto-stylor'
+    });
+</script>

@@ -98,11 +98,13 @@ namespace PolymerTestbed.Controllers
                 public readonly string _Listor = "_Listor";
                 public readonly string _NameCollector = "_NameCollector";
                 public readonly string _ProtoElement = "_ProtoElement";
+                public readonly string _Stylor = "_Stylor";
                 public readonly string All = "All";
             }
             public readonly string _Listor = "~/Views/WebComponents/_Listor.cshtml";
             public readonly string _NameCollector = "~/Views/WebComponents/_NameCollector.cshtml";
             public readonly string _ProtoElement = "~/Views/WebComponents/_ProtoElement.cshtml";
+            public readonly string _Stylor = "~/Views/WebComponents/_Stylor.cshtml";
             public readonly string All = "~/Views/WebComponents/All.cshtml";
         }
     }

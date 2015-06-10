@@ -1,9 +1,9 @@
 ﻿<dom-module id="name-list">
     <template>
-        <ul>
+        <ul id="name-lister">
             <content select=".name"></content>
         </ul>
-        <p id="allNames">{{nameList}}</p>
+        <p id="name-display">{{nameList}}</p>
     </template>
 </dom-module>
 
@@ -23,8 +23,7 @@
         },
 
         ready: function() {
-            //var allTags = document.getElementsByClassName("name");
-            var allTags = this.$$('.name');
+            var allTags = Polymer.dom(this.$.nameLister).querySelectorAll('.name');
 
             if (!allTags) {
                 return;
@@ -32,7 +31,7 @@
 
             var allGreetings = '';
             _.map(allTags, function (item) {
-                return item.innerText ?  'Hello ' + item.innerText : '';
+                return item.innerText ?  'Name collected: ' + item.innerText : '';
             }).forEach(function(greeting) {
                 allGreetings = allGreetings + greeting + ', ';
             });
