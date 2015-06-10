@@ -1,0 +1,44 @@
+﻿<dom-module id="name-list">
+    <template>
+        <ul>
+            <content select=".name"></content>
+        </ul>
+        <p id="allNames">{{nameList}}</p>
+    </template>
+</dom-module>
+
+
+
+<script>
+
+    PolymerTestBed.registerWebComponent({
+        is: "name-list",
+
+        properties: {
+          nameList: {
+              type: String,
+              value: 'No Names yet',
+
+          }  
+        },
+
+        ready: function() {
+            //var allTags = document.getElementsByClassName("name");
+            var allTags = this.$$('.name');
+
+            if (!allTags) {
+                return;
+            }
+
+            var allGreetings = '';
+            _.map(allTags, function (item) {
+                return item.innerText ?  'Hello ' + item.innerText : '';
+            }).forEach(function(greeting) {
+                allGreetings = allGreetings + greeting + ', ';
+            });
+
+            this.nameList = allGreetings;
+        }
+    });
+
+</script>

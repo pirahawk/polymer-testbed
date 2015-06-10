@@ -175,6 +175,7 @@
     <Content Include="Views\WebComponents\All.cshtml" />
     <Content Include="Views\WebComponents\_ProtoElement.cshtml" />
     <Content Include="Views\WebComponents\_NameCollector.cshtml" />
+    <Content Include="Views\WebComponents\_Listor.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -9,7 +9,7 @@
             <label for="lastName">Last Name: </label>
             <input type="text" id="lastName" value="{{lastName}}" />
             
-            <label id="fullName"></label>
+            <p id="fullName"></p>
         </div>
 
     </template>
@@ -47,7 +47,8 @@
 
         nameChanged: function (newValue, oldValue) {
             console.log('Name: ' + this.fullName);
-            this.$.fullName.textContent = this.fullName;
+            //this.$.fullName.textContent = this.fullName;
+            this.$$('p').textContent = this.fullName;
         },
     });
 
